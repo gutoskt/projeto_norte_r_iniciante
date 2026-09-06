@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 'Roboto', sans-serif; 
+}
+
+body{
+    --white: #FFF;
+    --black: #000;
+    --blue: #ea7d00;
+    --bluec: #f99a54;
+    --fundo: #f0f2f5;
+
+}
+
+.registro{
+    width: 100%;
+    height: 100vh;
+    max-width: 1600px;
+    max-height: 650px;
+    margin: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+
+    background-color: var(--white);
+
+    border-radius: 10px;
+}
+
+.registro h1{
+
+    margin: 20px 0;
+    color: var(--black);
+}
+
+.prechimentoAuto{
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.botao-upload{
+
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    background-color: var(--white);
+    color: var(--bluec);
+    border: 2px solid var(--bluec);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s linear;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prechimentoAuto input{
+
+    margin-right: 20px;
+    width: 0;
+    height: 0;
+}
+
+.prechimentoAuto button{
+
+    width: 150px;
+    height: 40px;
+    margin-right: 1000px;
+    font-size: 18px;
+    background-color: var(--bluec);
+    color: var(--white);
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.prechimentoAuto button:hover {
+    transform: scale(1.1);
+}
+
+.prechimentoAuto{
+    margin-left: 20px;
+}
+
+.registro1{
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.registro1 form{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.registroDir{
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;  
+}
+
+.registroEsq{
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;  
+}
+
+.campo-form{
+    width: 100%;
+    max-width: 650px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid var(--fundo); 
+
+}
+
+.campo-form input{
+
+    width: 100%;
+    max-width: 500px;
+    height: 35px;
+    font-size: 18px;
+    border: 2px solid var(--fundo); 
+    border-radius: 10px;
+    transition: border-color 0.2s;
+}
+
+.campo-form input:focus{
+
+    outline: none;
+    border-color: var(--blue);
+}
+
+.campo-form label{
+
+    width: 150px;
+    font-size: 18px;
+}
+
+/* ISSO É FORTE (ID) E VAI GANHAR A "GUERRA" */
+#salvarRegistro {
+    width: 150px;
+    height: 40px; /* O !important força a altura */
+    margin: 10px;
+    font-size: 18px;
+    background-color: var(--bluec);
+    color: var(--white);
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+#salvarRegistro:hover {
+    transform: scale(1.1);
+}

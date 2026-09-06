@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagem/logo.png" type="image/png">
+    <link rel="stylesheet" href="norte.css">
+    <link rel="stylesheet" href="anotacoes.css">
+    <link rel="stylesheet" href="registro.css">
+    <link rel="stylesheet" href="relatorio.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    
+    <title>Setor de Produção</title>
+</head>
+<body onload="mostrarRegistros()">
+   <header id="cabecalho1" class="cabecalho">
+
+        <img src="imagem/logoG.png" alt="Logo Norte Reboque">
+
+        <div id="menu1" class="menu">
+            <button id="registroB" onclick="mostrarRegistros()">Registro</button>
+            <button id="relatorioB" onclick="mostrarRelatorios()">Relatório</button>
+            <button id="anotacaoB" onclick="mostrarAnotacoes()">Anotções</button>
+        </div>
+        
+   </header>
+
+   <div class="divisao"></div>
+
+   <section id="anotacao1" class="anotacao">
+
+        <div id="app" class="main">
+
+            <h1>LISTA DE TAREFAS</h1>
+            <div>            
+                <input type="text" placeholder="Digite uma tarefa...">
+                <button>Registrar</button>
+            </div>
+
+            <ul>
+                
+            </ul>
+
+        </div>
+
+        <div class="anotaGerEsp">
+            <div id="anotaGer" class="anotaGeral">
+
+                <h1>ANOTAÇÕES GERAIS</h1>
+                <div id="anotaGeralTexto" class="anotaGeralTexto">
+                    <textarea placeholder="Digite suas anotaçoes..."></textarea>
+                </div>
+                
+            </div>turtututut
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  
+                        </div>
+
+                    </div>
+
+                    <button id="novaAnotacao" class="novaAnotacao" onclick="novaAnotacao()">+</button>,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+                </div>
+
+                
+            </div>
+        </div>
+
+
+   </section>
+
+   <section id="registro" class="registro">
+
+        <h1>REGISTRO GERAL - REBOQUE/MANUTENÇÃO</h1>
+
+        <div id="prechimentoAuto" class="prechimentoAuto">
+
+            <form>
+                <input type="file" id="ficheiroFoto" name="meuFicheiro" accept="image/*">
+            </form>
+
+            <label for="ficheiroFoto" class="botao-upload">
+                Escolher Arquivo
+            </label>
+
+            <button id="autoPreencher" onclick="autoPreencher()">Preencher</button>
+
+            <button id="salvarRegistro" onclick="salvarRegistro()">Salvar</button>
+        </div>
+
+        <div id="registro1" class="registro1">
+
+            <form action="#" method="post">
+
+                <div id="registroEsq" class="registroEsq">
+                
+                    <div class="campo-form">
+                        <label for="vendedor"><strong>VENDEDOR:</strong></label>
+                        <input type="text" id="vendedor" name="vendedor">
+                    </div>
+                    
+                    <div class="campo-form">
+                        <label for="cliente"><strong>CLIENTE:</strong></label>
+                        <input type="text" id="cliente" name="cliente">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="comprimento"><strong>COMPRIMENTO:</strong></label>
+                        <input type="text" id="comprimento" name="comprimento">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="largura"><strong>LARGURA:</strong></label>
+                        <input type="text" id="largura" name="largura">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="altura"><strong>ALTURA:</strong></label>
+                        <input type="text" id="altura" name="altura">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="bit_eixo"><strong>BIT/EIXO:</strong></label>
+                        <input type="text" id="bit_eixo" name="bit_eixo">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="n_chassi"><strong>N. CHASSI:</strong></label>
+                        <input type="text" id="n_chassi" name="n_chassi">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="cor"><strong>COR:</strong></label>
+                        <input type="text" id="cor" name="cor">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="data_entrega"><strong>DATA ENTREGA:</strong></label>
+                        <input type="text" id="data_entrega" name="data_entrega">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="tampa_porteira"><strong>TAMPA PORTEIRA:</strong></label>
+                        <input type="text" id="tampa_porteira" name="tampa_porteira">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="tampa_baixo"><strong>TAMPA P/ BAIXO:</strong></label>
+                        <input type="text" id="tampa_baixo" name="tampa_baixo">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="tampa_encaixe"><strong>TAMPA ENCAIXE:</strong></label>
+                        <input type="text" id="tampa_encaixe" name="tampa_encaixe">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="grafis"><strong>GRAFIS:</strong></label>
+                        <input type="text" id="grafis" name="grafis">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="tipo_munheca"><strong>TIPO MUNHECA:</strong></label>
+                        <input type="text" id="tipo_munheca" name="tipo_munheca">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="tipo_pe"><strong>TIPO PÉ:</strong></label>
+                        <input type="text" id="tipo_pe" name="tipo_pe">
+                    </div>
+                    
+                </div>
+
+                <div id="registroDir" class="registroDir">
+
+                    <div class="campo-form">
+                        <label for="gradd_aco"><strong>GRADD DE AÇO:</strong></label>
+                        <input type="text" id="gradd_aco" name="gradd_aco">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="pedido"><strong>PEDIDO:</strong></label>
+                        <input type="text" id="pedido" name="pedido">
+                    </div>
+                    <div class="campo-form">
+                        <label for="data_emissao"><strong>DATA EMISSÃO:</strong></label>
+                        <input type="text" id="data_emissao" name="data_emissao">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="contato"><strong>CONTATO:</strong></label>
+                        <input type="text" id="contato" name="contato">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="reb_trucado"><strong>REB. TRUCADO:</strong></label>
+                        <input type="text" id="reb_trucado" name="reb_trucado">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="acessorios"><strong>ACESSÓRIOS:</strong></label>
+                        <input type="text" id="acessorios" name="acessorios">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="step"><strong>STEP:</strong></label>
+                        <input type="text" id="step" name="step">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="suporte_step"><strong>SUPORTE DE STEP:</strong></label>
+                        <input type="text" id="suporte_step" name="suporte_step">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="emplacada"><strong>EMPLACADA:</strong></label>
+                        <input type="text" id="emplacada" name="emplacada">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="suspensao"><strong>SUSPENSÃO:</strong></label>
+                        <input type="text" id="suspensao" name="suspensao">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="capacidade"><strong>CAPACIDADE:</strong></label>
+                        <input type="text" id="capacidade" name="capacidade">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="ganchos"><strong>GANCHOS:</strong></label>
+                        <input type="text" id="ganchos" name="ganchos">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="rampa_gaveta"><strong>RAMPA E GAVETA:</strong></label>
+                        <input type="text" id="rampa_gaveta" name="rampa_gaveta">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="observacoes"><strong>OBSERVAÇÕES:</strong></label>
+                        <input type="text" id="observacoes" name="observacoes">
+                    </div>
+
+                </div>
+                
+            
+            </form>
+
+        </div>
+   </section>
+
+   <section id="relatorio" class="relatorio">
+
+        <h1>RELATÓRIO DE PRODUÇÃO</h1>
+
+    </section>
+
+
+    <script src="norte.js"></script>
+    <script src="anotacao.js"></script>
+    <script src="registro.js"></script>
+    <script src="relatorio.js"></script>
+</body>
+</html>
